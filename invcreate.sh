@@ -1,7 +1,7 @@
 #!/bin/bash
+# creates an Ansible host file from a CIDR if hosts have port 22 open
 
-
-read -r -ei '10.10.30.64/27' -p "Enter subnet to scan:" subnet
+read -r -ei 'xxx.xxx.xxx.xxx/xx' -p "Enter subnet to scan:" subnet
 read -r -ei 'MyGroup' -p "Enter ansible group name:" invgroup
 read -r -p "Are you sure? [Y/n]" response
 response=${response,,} # tolower
